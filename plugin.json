@@ -1,0 +1,23 @@
+{
+    "name": "DisableUrlDecoding",
+    "version": "0.1.0",
+    "description": "Disables URL-Decoding of current location and referer to avoid losing data in URL-encoded paths and parameters.",
+    "keywords": "encoding,URL,outlinks",
+    "license": "GPL-3.0+",
+    "authors": [
+        {
+            "name": "Anisatum",
+            "email": "anisatum@proton.me",
+            "homepage": "https://github.com/Anisatum"
+        }
+    ],
+    "support": {
+        "email": "anisatum@proton.me",
+        "issues": "https://github.com/Anisatum/matomo-plugin-DisableUrlDecoding/issues",
+        "source": "https://github.com/Anisatum/matomo-plugin-DisableUrlDecoding/"
+    },
+    "require": {
+        "matomo": ">=5.0.0-b1,<6.0.0-b1",
+        "php": ">=7.0.0"
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "DisableUrlDecoding": {
+        "DisableTitle": "Globally disable URL decoding",
+        "DisableInlineHelp": "This will apply the current URL-decoding configuration to all Websites. You can still apply a per-website configuration through the Tracker Code, which overrides these system settings.",
+        "ForTitle": "Disable decoding for:",
+        "ForInlineHelp": "If you don't have a fresh Matomo installation, and already gathered data, disabling url-decoding might cause inconsistency in between how the already stored URLs, and the data gathered in the future. Here you can limit how the disable-decoding logic will be applied:",
+        "ForInlineHelpAll": " - If this option is selected, the current location or referer will NEVER be decoded.",
+        "ForInlineHelpRegexp": " - URL-decoding will only be disabled for addresses matching the specified Regular Expression",
+        "ForInlineHelpParams": " - URL-decoding will only be disabled for all addresses, but will only be applied to specified URL-parameters",
+        "ForValueAll": "All URLs",
+        "ForValueRegexp": "URLs matching the following RegExp",
+        "ForValueParams": "Only the following URL-parameters",
+        "RegexpTitle": "Regular Expression",
+        "RegexpInlineHelp": "Please enter a Regular Expression, that will be used to detect addresses that should not be decoded. If the Regular Expression contains groups, only the captured groups will be excluded from decoding",
+        "ParamsTitle": "Parameters",
+        "ParamsInlineHelp": "Please provide a comma seperated list of parameters you want to exclude from decoding."
+    }
+}

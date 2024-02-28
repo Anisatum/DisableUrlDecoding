@@ -1,0 +1,54 @@
+# Action for running tests
+# This file has been automatically created.
+# To recreate it you can run this command
+# ./console generate:test-action --plugin="DisableUrlDecoding" --php-versions="7.0" --schedule-cron="5 * * * *"
+
+name: Plugin DisableUrlDecoding Tests
+
+on:
+  pull_request:
+    types: [opened, synchronize]
+  push:
+    branches:
+      - '**.x-dev'
+  workflow_dispatch:
+  schedule:
+  - cron: "5 * * * *"
+
+permissions:
+  actions: read
+  checks: none
+  contents: read
+  deployments: none
+  issues: read
+  packages: none
+  pull-requests: read
+  repository-projects: none
+  security-events: none
+  statuses: none
+
+concurrency:
+  group: php-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  Javascript:
+    runs-on: ubuntu-20.04
+    timeout-minutes: 15
+    strategy:
+      fail-fast: false
+      matrix:
+        target: ['minimum_required_matomo', 'maximum_supported_matomo']
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          lfs: false
+          persist-credentials: false
+      - name: running tests
+        uses: matomo-org/github-action-tests@main
+        with:
+          plugin-name: 'DisableUrlDecoding'
+          matomo-test-branch: ${{ matrix.target }}
+          test-type: 'JS'
+          php-version: '7.0'
+          node-version: '12'
