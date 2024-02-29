@@ -17,7 +17,7 @@
         "source": "https://github.com/Anisatum/matomo-plugin-DisableUrlDecoding/"
     },
     "require": {
-        "matomo": ">=5.0.0-b1,<6.0.0-b1",
+        "matomo": ">=5.0.0,<6.0.0-b1",
         "php": ">=7.2.5"
     }
 }
