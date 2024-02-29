@@ -21,6 +21,8 @@ Cutting the query down to "Heatmap ", and creating a " session recording" parame
 Decoding URLs containing encoded text will always result in similar issues. This plugin offers several
 ways to disable URL-decoding.
 
+Intended to resolve issues like [#21111](https://github.com/matomo-org/matomo/issues/21111), [#14715](https://github.com/matomo-org/matomo/issues/14715), and [#16628](https://github.com/matomo-org/matomo/pull/16628).
+
 ## Usage
 
 The plugin can be activated from the System Settings, or through Javascript. The Javascript settings override the System
