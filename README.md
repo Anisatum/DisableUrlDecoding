@@ -1,5 +1,7 @@
 # Matomo Disable URL Decoding Plugin
 
+[![Plugin DisableUrlDecoding Tests](https://github.com/Anisatum/matomo-plugin-DisableUrlDecoding/actions/workflows/matomo-tests.yml/badge.svg)](https://github.com/sgiehl/piwik-plugin-ReferrersManager/actions/workflows/matomo-tests.yml)
+
 ## Description
 
 To properly handle some special characters, browsers need to URL-encode them. For example a URL with a search query
