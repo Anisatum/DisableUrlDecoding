@@ -12,14 +12,6 @@ use Piwik\Piwik;
 use Piwik\Settings\Setting;
 use Piwik\Settings\FieldConfig;
 
-/**
- * Defines Settings for DisableUrlDecoding.
- *
- * Usage like this:
- * $settings = new SystemSettings();
- * $settings->metric->getValue();
- * $settings->description->getValue();
- */
 class SystemSettings extends \Piwik\Settings\Plugin\SystemSettings
 {
     const TYPE_ALL = 'all';

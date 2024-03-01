@@ -1,6 +1,6 @@
 {
     "name": "DisableUrlDecoding",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Disables URL-Decoding of current location and referer to avoid losing data in URL-encoded paths and parameters.",
     "keywords": ["encoding","URL","outlinks"],
     "license": "GPL-3.0+",
